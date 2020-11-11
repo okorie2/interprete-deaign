@@ -1,0 +1,123 @@
+html{
+    
+    background-color: #E5E5E5;
+    height: 100%;
+    
+}
+body{
+    min-height: 100%;
+    overflow-x: hidden;
+    padding: 0;
+    margin: -1%;
+    border: 0;
+    
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns:  18% auto ;
+    grid-template-rows: 100vh;
+    width: 100vw;
+    height: 100vh;
+    grid-gap: 10px;
+    padding: 10px;
+    
+}
+.grid-container > div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+
+  }
+  .grid-container > .nav-item{
+    background-color: #1A1A1A;
+    height: 100vh;
+  }
+  .item-elements{
+      font-size: 0.5em;
+      color:#ffffff ;
+      font-weight: 400;
+      font-style: normal;
+      padding-bottom: 0.2%;
+      height: 4%;
+      border-bottom: 1px solid rgb(179, 173, 174);
+      width: 17%;
+      
+  }
+  .logout{
+      border-top: none !important;
+      position: absolute;
+      border-top: 1px solid rgb(179, 173, 174);
+      bottom: 0;
+  }
+  .one{
+    position: absolute;
+    left: 0.7%;
+    top: 2%;
+  }
+  .two{
+    position: absolute;
+    left: 0.7%;
+    top: 7%;
+  }
+  .three{
+    position: absolute;
+    left: 0.7%;
+    top: 12%;
+  }
+  .four{
+    position: absolute;
+    left: 0.7%;
+    top: 17%;
+  }
+  .item-elements:hover,.item-elements:focus {
+      background-color:#FF6800 ;
+  }
+  a{
+      text-decoration: none;
+      color:#ffffff;
+  }
+  
+  #far{
+      position: absolute;
+      left: 0;
+  }
+  #fas1{
+    position: absolute;
+    left: 0;
+  }
+  #fas2{
+        position: absolute;
+        left: 0;
+  }
+  #fas3{
+        position: absolute;
+        left: 0;
+  }
+  h3{
+     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+     font-style: normal;
+     font-weight: bold;
+     font-size: 36px;
+     line-height: 55px;
+     line-height: 100%;
+     text-align: left;
+  }
+  button{
+      background-color:#FF6800 ;
+      height: 5%;
+      width: 8%;
+      border: 1px solid #FF6800;
+      color:#ffffff ;
+  }
+  #user-btn{
+      position: absolute;
+      top: 10%;
+      right: 5%;
+     
+      
+  }
+  
+ 
+  
