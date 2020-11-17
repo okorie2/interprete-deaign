@@ -2,7 +2,6 @@ html{
     
     background-color: #E5E5E5;
     height: 100%;
-    
 }
 body{
     min-height: 100%;
@@ -12,8 +11,6 @@ body{
     border: 0;
     
 }
-
-
 .grid-container{
     display: grid;
     grid-template-columns:  18% auto ;
@@ -22,7 +19,6 @@ body{
     height: 100vh;
     grid-gap: 10px;
     padding: 10px;
-    
 }
 .grid-container > div {
     text-align: center;
@@ -34,67 +30,38 @@ body{
     background-color: #1A1A1A;
     height: 100vh;
   }
-  .item-elements{
-      font-size: 0.5em;
-      color:#ffffff ;
-      font-weight: 400;
-      font-style: normal;
-      padding-bottom: 0.2%;
-      height: 4%;
-      border-bottom: 1px solid rgb(179, 173, 174);
-      width: 17%;
-      
+  .nav-item{
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-item > div{
+    border-bottom: thin solid gray;
+    color: #ffffff;
+    font-size: 1.3rem;
+
   }
   .logout{
-      border-top: none !important;
+      border-bottom: none !important;
       position: absolute;
-      border-top: 1px solid rgb(179, 173, 174);
-      bottom: 0;
+      width: 18.3%;
+      height: 4%;
+      background-color:#272626; ;
+      bottom: -6%;
   }
-  .one{
-    position: absolute;
-    left: 0.7%;
-    top: 2%;
-  }
-  .two{
-    position: absolute;
-    left: 0.7%;
-    top: 7%;
-  }
-  .three{
-    position: absolute;
-    left: 0.7%;
-    top: 12%;
-  }
-  .four{
-    position: absolute;
-    left: 0.7%;
-    top: 17%;
-  }
-  .item-elements:hover,.item-elements:focus {
+  
+  .item-elements:hover,.item-elements:focus, a:hover {
       background-color:#FF6800 ;
+      color: rgb(31, 30, 30)
   }
   a{
       text-decoration: none;
       color:#ffffff;
   }
-  
-  #far{
-      position: absolute;
-      left: 0;
+  .fas, .far{
+    float: left;
+    padding-left: 3%;
   }
-  #fas1{
-    position: absolute;
-    left: 0;
-  }
-  #fas2{
-        position: absolute;
-        left: 0;
-  }
-  #fas3{
-        position: absolute;
-        left: 0;
-  }
+ 
   h3{
      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
      font-style: normal;
@@ -105,19 +72,126 @@ body{
      text-align: left;
   }
   button{
-      background-color:#FF6800 ;
-      height: 5%;
-      width: 8%;
+      margin-left: 3%;
+      height: 15%;
+      width: 9%;
       border: 1px solid #FF6800;
-      color:#ffffff ;
-  }
-  #user-btn{
-      position: absolute;
-      top: 10%;
-      right: 5%;
-     
+      background: #FF6800;
+      color: white;
+      font-size: 75%;
       
   }
+  #user-btn{
+    position: absolute;
+    top: 9%;
+    right: 7%;
+    height: 4%;
+    font-size: small;
+    max-width: fit-content;
+    
+  }
+  .del-btn{
+    background-color:#f3f0ed;
+    border: 1px solid #666463;
+    color: black;
+  }
+  
+ 
+  /* new user  page*/
+  .head-grid{
+    display: grid;
+    grid-template-columns: 20% 10% 18.7% 50% ;
+  }
+  .head-grid>div{
+    text-align: center;
+    background-color: #E5E5E5;
+    border: thin gray solid;
+    padding: 3%;
+    font-size: smaller;
+  }
+  .cell3{
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+ .newuser-form{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 70%;
+    border: solid thin rgb(158, 156, 156);
+
+  }
+  .newuser-form > div{
+    text-align: left;
+    height: 20%;
+    width: 40%;
+    margin: 2%;
+    border-bottom: solid thin rgb(122, 116, 116);
+  }
+  .newuser-form input[type=text],.comment-tab input[type=text], select{
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    width: 100%;
+    background-color: #E5E5E5;
+  }
+  .newuser-form input[type=text]:focus, select:focus{
+    width: 100%;
+    border: 3px solid #FF6800;
+    border-radius: 8%;
+    outline: none;
+  }
+  
+  #del-btn{
+    margin-left:30%;
+    position: relative;
+    bottom: 8%;
+    left: -14%;
+  }
+  #user-image{
+    position: absolute;
+    height:20%;
+    width: 13%;
+    background:rgb(224, 221, 221);
+    border: thin solid gray;
+    top: 31%;
+    right: 22%;
+  }
+  #image{
+    top: 27%;
+    right: 31%;
+    position: absolute;
+    font-size: smaller;
+  }
+  /*----comment class style ---*/
+  .comment-class{
+    border-top: 2px solid #FF6800 !important;
+  }
+  .comment-tab{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 100%;
+    border: solid thin rgb(158, 156, 156);
+
+  }
+  .comment-tab > div{
+    text-align: left;
+    height:40%;
+    width: 40%;
+    margin: 2%;
+    border-bottom: solid thin rgb(122, 116, 116);
+  }
+  .com-btn{
+    position: relative;
+    top: 100%;
+    min-width: fit-content;
+    height: 13%;
+    padding-bottom: 5%;
+  }
+
+
   
  
   
